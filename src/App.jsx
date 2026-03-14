@@ -8,6 +8,9 @@ import Navbar from "./layout/Navbar"
 import Footer from "./layout/Footer"
 // Auth
 import Login from "./auth/Login";
+import Register from "./auth/Register";
+import ForgotPassword from "./auth/ForgotPassword";
+import ResetPassword from "./auth/ResetPassword";
 import { Routes, Route } from "react-router-dom"
 function App() {
   return (
@@ -19,7 +22,9 @@ function App() {
         <Route path="/features" element={<><Navbar /><Features /><Footer /></>} />
         <Route path="/pricing" element={<><Navbar /><Pricing /><Footer /></>} />
         <Route path="/login" element={<Login />} />
-        
+        <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
       </Routes>
     </>
   )

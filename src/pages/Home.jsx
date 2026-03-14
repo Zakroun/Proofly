@@ -9,12 +9,14 @@ export default function Home() {
     return (
         <div>
             <Hero />
-            <Services />
-            <WhyProofly />
-            <Features />
-            <Testimonials />
-            <Pricing />
-            <FAQ />
+            <div className="home-part-2">
+                <Services />
+                <WhyProofly />
+                <Features />
+                <Testimonials />
+                <Pricing />
+                <FAQ />
+            </div>
         </div>
     );
 }
